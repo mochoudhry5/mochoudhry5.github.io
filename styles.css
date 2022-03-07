@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    background-color:#42b12b91;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-size:50px;
+    font-family: "Chalkduster", fantasy;
+    padding-bottom:13px;
+    background-color: rgb(231, 213, 49);
+
+}
+
+.link-golf {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    background-color: rgb(231, 213, 49);
+    
+}
+
+.link-fancy {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    background-color: rgb(231, 213, 49);
+
+}
