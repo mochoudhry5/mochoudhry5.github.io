@@ -1,25 +1,31 @@
 function bigger() {
-    let words = document.getElementById("textarea");
-    words.style.fontSize="24pt";
+  document.getElementById("textarea").style.fontSize = "24pt";
+  alert("Hello World")
 }
 
 function fancy() {
-    let check = document.getElementById("fancy");
-    let words = document.getElementById("textarea");
-    if(check.checked) {
-        words.style.fontWeight = "bold";
-        words.style.color = "blue";
-        words.style.textDecoration = "underline blink";
-    } else {
-        words.style.fontWeight = "normal";
-        words.style.color = "black";
-        words.style.textDecoration = "none";
-    }
+  let userText = document.getElementById("textarea");
+  if (document.getElementById("fancytext").checked) {
+    document.getElementById("boringText").checked = false;
+    userText.style.fontWeight = "bold";
+    userText.style.textDecoration = "underline";
+    userText.style.color = "blue";
+  }
+}
+
+function boringBetty() {
+  let userText = document.getElementById("textarea");
+  if (document.getElementById("boringText").checked) {
+    document.getElementById("fancytext").checked = false;
+    userText.style.fontWeight = "normal";
+    userText.style.textDecoration = "none";
+    userText.style.color = "black";
+  }
 }
 
 function moo() {
-    let words = document.getElementById("textarea");
-    let per = words.value.split(".");
-    words.value = per.join("-Moo.");
+  let userText = document.getElementById("textarea");
+  userText.style.textTransform = "uppercase";
+  let split = userText.value.split(".");
+  userText.value = split.join("-Moo.");
 }
-
